@@ -1,7 +1,7 @@
 import { SkinChanger } from "./SkinChanger.js";
 
 let skinStyle = document.querySelector("#skin"),
-    skins = ["gold","peach","basic","win95","mech","scifi","gamble","industrial","bones","moiree"];
+    skins = ["gold","peach","basic","win95","mech","scifi","gamble","industrial","bones","moiree", "starwars"];
 
 
 window.skinChanger = new SkinChanger(skinStyle, skins, "./src/css/");
@@ -9,5 +9,5 @@ window.skinChanger = new SkinChanger(skinStyle, skins, "./src/css/");
 document.querySelector(".next").addEventListener("click", () => skinChanger.next());
 document.querySelector(".previous").addEventListener("click", () => skinChanger.previous());
 
-skinChanger.activeSkin = "basic";
+skinChanger.activeSkin = "starwars";
 
