@@ -1,0 +1,79 @@
+@font-face {
+    font-family: 'Star Jedi';
+    src: url('../../fonts/Starjedi.ttf'); /* IE9 Compat Modes */
+  }
+
+.gameBox {
+    margin: .75em auto 0;
+    background-color: black;
+    border-width: .75vh .75vh;
+    border-style: solid;
+    border-radius: 5vh;
+    border-color: #FFE81F;
+    box-shadow: 0 0 3vh 1vh black;
+}
+
+.controls {
+    color: white;
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 3.5vh;
+    right: 2vh;
+    font-family: 'Star Jedi';
+    font-size: 1.7vh;
+    box-shadow: 0 0 2vh .1vh #FFE81F;
+    border-radius: 2vh;
+}
+
+.reset:hover {
+    box-shadow: 0 0 2vh .3vh #FFE81F;
+}
+
+.reset:active {
+    box-shadow: 0 0 2vh .1vh #FFE81F;
+    background-color: #222222;
+}
+
+.logo {
+    align-items: center;
+    display: flex;
+    font-family: 'Star Jedi';
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: #FFE81F;
+    margin: 10px;
+    padding-left: 10px;
+}
+
+.accent {
+    border-radius: 50%;
+    background-color: #ece6ce;
+    width: 100px;
+    height: 100px;
+    margin: 0 auto;
+    background-image: radial-gradient(circle at 110px 111px, #8b8879, #8b8879 2%, transparent 3%), radial-gradient(circle at 117px 60px, #8b8879, #8b8879 3%, transparent 4%), radial-gradient(circle at 155px 90px, #8b8879, #8b8879 3%, transparent 4%), radial-gradient(circle at 70px 210px, #8b8879, #8b8879 3%, transparent 4%), radial-gradient(circle at 180px 180px, transparent 21%, #ff7e00 22%, #ff7e00 27%, transparent 28%, transparent 100%), radial-gradient(circle at 45px 45px, transparent 21%, #ff7e00 22%, #ff7e00 27%, transparent 28%, transparent 100%), linear-gradient(48deg, transparent, transparent 69%, #958979 70%, transparent 71%), linear-gradient(145deg, transparent, transparent 54%, #958979 55%, transparent 56%), linear-gradient(135deg, #ece6ce, #ece6ce 25%, transparent 26%, transparent 40%, #ece6ce 41%, #ece6ce 53%, transparent 54%, transparent 64%, #ece6ce 65%, #ece6ce 78%, transparent 79%), linear-gradient(45deg, transparent, transparent 47%, #ff7e00 48%, #ff7e00 52%, transparent 53%);
+    animation: rotating 0.75s linear infinite;
+}
+
+@keyframes rotating {
+    0% { transform: rotate(0deg); }
+
+    100% { transform: rotate(360deg); }
+}
+
+.accent:before {
+    content: "";
+    display: block;
+    position: absolute;
+    left: 40px;
+    top:43px;
+    width: 15px;
+    height: 8px;
+    border-radius: 50% 50% 0 0;
+    transform: rotate(-45deg);
+    background-image: linear-gradient(0deg, #8b8879, #8b8879 10%, #ece6ce 11%, #ece6ce 21%, #8b8879 22%, #8b8879 32%, #ece6ce 33%, #ece6ce 43%, #8b8879 44%);
+}
+  
