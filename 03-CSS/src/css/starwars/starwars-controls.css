@@ -1,0 +1,120 @@
+.controls > *,
+.skin-change > div {    
+    background-color: var(--black);
+
+    color: var(--black);
+    text-align: center;
+    font-family: monospace;
+    font-weight: 900; 
+    -webkit-text-stroke-width: 1px;
+    -webkit-text-stroke-color: var(--yellow);
+}
+
+.d-pad {
+    margin-top: 6vh;
+
+    padding-top: 1vh;
+    border-top-left-radius: 3.5vh;
+    border-top-right-radius: 3.5vh;
+    border-bottom-right-radius: 5vh 100%;
+    border-bottom-left-radius: 5vh 100%;
+
+    transform-origin: 50% 40%;
+
+    line-height: 6.5vh;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 7vh;
+}
+
+.d-pad:active,
+.d-pad:focus {
+    box-shadow: 0 0 .6vh 0 var(--yellow),
+    0 0 0 .4vh inset var(--yellow);
+    font-size: 6vh;
+}
+
+.up {
+    box-shadow: 0 0 .6vh 0 var(--yellow),
+        1vh 1vh .5vh .1vh inset var(--button-highlight), 
+        0 0 0 .2vh inset var(--yellow);
+}
+
+.right {
+    box-shadow: 0 0 .6vh 0 var(--yellow),
+        1vh -1vh .5vh .1vh inset var(--button-highlight), 
+        0 0 0 .2vh inset var(--yellow);
+}
+
+.down {
+    box-shadow: 0 0 .6vh 0 var(--yellow),
+        -1vh -1vh .5vh .1vh inset var(--button-highlight), 
+        0 0 0 .2vh inset var(--yellow);
+}
+
+.left {
+    box-shadow: 0 0 .6vh 0 var(--yellow),
+        -1vh 1vh .5vh .1vh inset var(--button-highlight), 
+        0 0 0 .2vh inset var(--yellow);
+}
+
+.reset {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 2.5vh;
+    right: 2vh;
+    font-family: 'Star Jedi';
+    font-size: 1.7vh;
+    box-shadow: 0 0 .6vh 0 var(--yellow),
+        -1vh 1vh .5vh .1vh inset var(--button-highlight), 
+        0 0 0 .2vh inset var(--yellow);
+    border-radius: 2vh;
+}
+
+.reset:focus,
+.reset:active {
+    box-shadow: 0 0 .6vh 0 var(--yellow),
+    0 0 0 .4vh inset var(--yellow);
+    font-size: 1.5vh;
+}
+
+.big-button:active {
+    box-shadow: 0 0 .6vh 0 var(--shadow),
+    0 0 0 .4vh inset var(--yellow);
+    font-size: 5vh;
+}
+
+.big-button {   
+    transform: rotate(-20deg);
+
+    box-shadow: 0 0 .6vh 0 var(--yellow),
+        .4vh .8vh .5vh .1vh inset var(--button-highlight), 
+        0 0 0 .2vh inset var(--yellow);
+
+    line-height: 7vh;
+    font-size: 5.5vh;
+}
+
+.previous {
+    padding-top: .45vh;
+    border-radius: 50% 0 0 50%;
+    box-shadow: 0 0 .6vh 0 var(--yellow),
+        -1vh 1vh .5vh .1vh inset var(--button-highlight), 
+        0 0 0 .2vh inset var(--yellow);
+}
+
+.next {
+    padding-top: .45vh;
+    border-radius:  0 50% 50% 0;
+    box-shadow: 0 0 .6vh 0 var(--yellow),
+        -1vh 1vh .5vh .1vh inset var(--button-highlight), 
+        0 0 0 .2vh inset var(--yellow);
+}
+
+.previous:active,
+.previous:focus,
+.next:active,
+.next:focus {
+    box-shadow: 0 0 .6vh 0 var(--yellow),
+    0 0 0 .4vh inset var(--yellow);
+}

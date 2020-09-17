@@ -1,0 +1,10 @@
+:root {
+    --dark-purple: hsl(305, 100%, 13%);
+    --orange: hsl(32, 100%, 50%);
+    --orange-trans: hsla(32, 100%, 50%, 0.6);
+    --purple: hsl(300, 100%, 25%);
+    --purple-trans: hsla(300, 100%, 25%, 0.4);
+    --black: black;
+    --yellow:#FFE81F;
+    --button-highlight: hsla(0, 0%, 100%, 0.2);
+}

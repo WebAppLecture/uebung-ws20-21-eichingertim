@@ -3,39 +3,22 @@
     src: url('../../fonts/Starjedi.ttf'); /* IE9 Compat Modes */
   }
 
+body {
+    background: url('https://user-images.githubusercontent.com/15229355/34257748-c9afcda8-e663-11e7-8b3b-c9a0e0bd9119.png');
+}
+
 .gameBox {
     margin: .75em auto 0;
-    background-color: black;
-    border-width: .75vh .75vh;
-    border-style: solid;
+    background: var(--black);
+    /*border-width: .75vh .75vh;
+    border-style: solid;*/
     border-radius: 5vh;
-    border-color: #FFE81F;
-    box-shadow: 0 0 3vh 1vh black;
-}
-
-.controls {
-    color: white;
-}
-
-.reset {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    top: 3.5vh;
-    right: 2vh;
-    font-family: 'Star Jedi';
-    font-size: 1.7vh;
-    box-shadow: 0 0 2vh .1vh #FFE81F;
-    border-radius: 2vh;
-}
-
-.reset:hover {
-    box-shadow: 0 0 2vh .3vh #FFE81F;
-}
-
-.reset:active {
-    box-shadow: 0 0 2vh .1vh #FFE81F;
-    background-color: #222222;
+    /*border-color: var(--yellow);
+    box-shadow: 0 0 3vh 1vh black;*/
+    box-shadow: -.5vh -.5vh 2vh -.2vh var(--yellow) inset,
+        .6vh .6vh .7vh .2vh var(--yellow),
+        0 0 1.5vh -.5vh var(--yellow);
+    
 }
 
 .logo {
@@ -43,7 +26,7 @@
     display: flex;
     font-family: 'Star Jedi';
     -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: #FFE81F;
+    -webkit-text-stroke-color: var(--yellow);
     margin: 10px;
     padding-left: 10px;
 }
